@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <title>Alan Lin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div id="main">
+    <div class="menu">
+      <span style="font-size:25px;cursor:pointer;padding-left: 20px; border-style:solid;border-color: black; background-color: lightgray; padding-right: 20px;" onclick="openNav()">&#9776; </span>
+    </div>
+
+  <div class="container">
+    <div class="image-col">
+      <img src="alan.jpg">
+    </div>
+    <div class="text-col">
+     <h1>ALAN LIN</h1>
+       <p>3rd year undergraduate student
+         <br>Saitama University, Dept. of Computer Science
+         <br>Email: <a href="mailto:lamalan99@gmail.com">lamalan99@gmail.com</a>
+      </p>
+    </div>
+ </div>
+
+  <div class="container1">
+    <h2><u>Introduction</u></h2>
+       <p>My name is Alan Lin. I am from Vanuatu but currently residing and attending University in Japan. 
+         I speak English, Japanese, Bislama and Chinese mandarin/cantonese. I am a newbie in programming.</p>
+    <h4><u>SocialNetworking</u></h4>
+      
+        <a href="https://www.facebook.com/alan.lam.718"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/alan_lcy/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/alan99l?lang=en"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCYooIwCOmd8qI1fftjN7zOA"><i class="fab fa-youtube"></i></a>
+  </div>
+
+
+ </div> 
+
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="../blog/index.html">Blog</a>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
