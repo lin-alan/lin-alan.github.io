@@ -1,9 +1,55 @@
-h1 {
-    color: black;
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css";
+ 
+i {
+    position: static;
+    margin: 0px 10px;
 }
 
+
+i.fa-facebook {
+    color: #5252b8;
+}
+
+i.fa-instagram {
+    color: #d6249f; 
+}
+
+i.fa-twitter {
+    color: #00acee;    
+}
+
+i.fa-youtube {
+    color: #c4302b    
+}
+
+
 body {
-    background-color: lightblue;
+    background-color: white;
+  }
+  p {
+    color: rgb(0, 0, 0);
+  }
+  img {
+    vertical-align: middle;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    padding: 20px;
+    height: 220;
+    width: 200;
+}
+
+.image-col {
+    flex-basis: 10%;
+}
+
+.container1 {
+    padding-left: 20px;
 }
 
 .sidenav {
@@ -42,10 +88,16 @@ body {
   
   #main {
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 20px;
   }
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+.menu {
+  padding-left: 20px;
+}
+  
+
+  

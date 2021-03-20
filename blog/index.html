@@ -8,6 +8,9 @@
     <title>Blog</title>
 </head>
 <body>
+  <div id="main">
+    <span style="font-size:25px;cursor:pointer;padding-left: 20px; padding-right: 20px; border-style:solid;border-color: black; background-color: lightgrey;" onclick="openNav()">&#9776; </span>
+
     <h1><u>My story when I came to Japan.</u></h1>
     <p>Arrived into NADI international airport at night, we (3 including me) 
         <br>were expecting someone to guide us but were left into 
@@ -90,5 +93,25 @@
     <p>*with the world now facing a new virus, let’s put away racism, politics etc 
         <br>and by doing your part by staying at home. With god we can overcome this battle.</p>
     
+  </div>  
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../alan/index.html">Home</a>
+        <a href="index.html">Blog</a>
+    </div>    
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+            
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+
 </body>
 </html>
