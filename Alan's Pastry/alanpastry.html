@@ -5,7 +5,36 @@
 
     <body>
         
-    </body>
+    <div id="main">
+
+        <div class="navi">
+            <div class="about">
+                <button class="aboutbtn">About<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="about-content">
+                    <a href="#">Who am i?</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="#Contact">Contact</a>
+        </div>
+
+
+
+        
+        <span style="font-size:25px;cursor:pointer;padding-left: 20px; padding-right: 20px; border-style:solid;border-color: black; background-color: lightgrey;" onclick="openNav()">&#9776; </span>
+        <h1>welcome</h1>
+
+        <button type="button" onclick="document.getElementById('dateandtime').innerHTML=Date()">
+        click me to display Date and time.</button>
+
+        <p id="dateandtime"></p>
+
+
+    </div>
+
+    
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -25,4 +54,8 @@
           document.getElementById("main").style.marginLeft= "0";
       }
       </script>
+
+
+          
+    </body>
 </html>
