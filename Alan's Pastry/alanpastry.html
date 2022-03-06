@@ -1,51 +1,32 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="pastry.css">
+        <meta charset="utf-8">
         <title>Alan's Pastry</title>
+        <meta name="description" content="Homemade desserts">
+        <!-- <link rel="stylesheet" href="pastry.css"> -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https:fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="css/pastry.css" rel="stylesheet">
+        
     </head>
 
     <body>
+        <header class="page-header wrapper">
+            <h1><a href="alanpastry.html"><img class="logo" src="images/logo.svg" alt="Alan's Pastry"></a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="news.html">News</li>
+                    <li><a href="menu.html">Menu</li>
+                    <li><a href="contact.html">Contact</li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
         
-    <div id="main">
-
-        <div class="navi">
-            <div class="about">
-                <button class="aboutbtn">About<i class="fa fa-caret-down"></i>
-                </button>
-                <div class="about-content">
-                    <a href="#">Who am i?</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <a href="#Contact">Contact</a>
-        </div>
-
-
-
-        
-        <span style="font-size:25px;cursor:pointer;padding-left: 20px; padding-right: 20px; border-style:solid;border-color: black; background-color: lightgrey;" onclick="openNav()">&#9776; </span>
-        <h1>welcome</h1>
-
-        <button type="button" onclick="document.getElementById('dateandtime').innerHTML=Date()">
-        click me to display Date and time.</button>
-
-        <p id="dateandtime"></p>
-
-
-    </div>
-
-    
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../index.html">Home</a>
-        <a href="../blog/index.html">Blog</a>
-        <a href="alanpastry.html">Alan's Pastry</a>
-    </div>
-
-    <script src="pastry.js"></script>
-          
+        <div class="home-content wrapper">
+            <h2 class="page-title">Homemade Desserts</h2>
+            <p>自家製デザートを食べてみませんか？</p>
+            <a class="button" href="menu.html">メニューを見る</a>
+        </div><!--/.home-content-->
     </body>
 </html>
