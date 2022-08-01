@@ -48,7 +48,13 @@ img {
 }
 
 /* Home */
-
+/* #home {
+  background-image: url(../images/cake.jpg);
+  min-height: 100vh;
+}
+#home .page-title{
+  text-transform: none;
+} */
 .home-content {
   text-align: center;
   margin-top: 10%;
@@ -77,4 +83,11 @@ img {
 
 .button:hover {
   background: #0090aa;
+}
+
+/*大きな背景画像*/
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
