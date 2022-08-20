@@ -53,6 +53,20 @@ img {
     padding-right: 70%;
 }
 
+.content {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.news {
+  padding-left: 20px;
+  border:2px solid #ccc;
+  height: 100px;
+  width: 300px;
+  overflow-x:hidden ;
+  
+}
+
 .videolink {
   padding-left: 20px;
   padding-right: 70%;
