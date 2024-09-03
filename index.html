@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alan Lin</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <script src="questionsaboutme.js"></script> -->
+  <script src="myscript.js" defer></script>
 </head>
-
 <body>
-  <div id="main">
+  <header>
     <div class="menu">
-      <span class="menu-icon" onclick="openNav()">&#9776;</span>
+      <span class="menu-icon" onclick="toggleNav()">&#9776;</span>
     </div>
+  </header>
 
-    <div class="container">
+  <main id="main">
+    <section class="container">
       <div class="image-col">
         <img src="alan.jpg" alt="Alan Lin">
       </div>
       <div class="text-col">
         <h1>ALAN LIN</h1>
         <p>
-          Graduated in march 2023<br>
+          Graduated in March 2023<br>
           Saitama University, Dept. of Computer Science <br>
           Email: <a href="mailto:lamalan99@gmail.com">lamalan99@gmail.com</a>
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="container1">
-      <h2><u>Introduction</u></h2>
+    <section class="container1">
+      <h2>Introduction</h2>
       <p>My name is Alan Lin. I am from Vanuatu but currently residing and attending University in Japan. 
-        I speak English, Japanese, Bislama and Chinese Mandarin/Cantonese. I am a newbie in programming.</p>
+        I speak English, Japanese, Bislama, and Chinese Mandarin/Cantonese. I am a newbie in programming.</p>
       
       <p>Currently working as a QA Engineer, I'm expanding my skills in HTML, CSS, and JavaScript, aiming to transition into a Junior Frontend Engineer role. I'm eager to contribute to both QA and development, bringing a strong focus on quality and user-friendly design.</p>
 
-      <h4><u>UI/UX デザイン</u></h4>
+      <h4>UI/UX デザイン</h4>
       <p>独学でデザインのことも勉強しています。次のリンクをクリックしてから、見れます。</p>
       <a href="UIUXdesign/UIUXdesign.html">UI UX Design</a>
 
-      <h4><u>Social Networking</u></h4>
+      <h4>Social Networking</h4>
       <div class="social-links">
-        <a href="https://www.facebook.com/alan.lam.718"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/alan_lcy/?hl=en"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/alan99l?lang=en"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/channel/UCYooIwCOmd8qI1fftjN7zOA"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/alan.lam.718" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/alan_lcy/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/alan99l?lang=en" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCYooIwCOmd8qI1fftjN7zOA" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
-    </div>
+    </section>
 
-    <div class="content">
+    <section class="content">
       <div class="news">
         <p>[2022.08.22] <a href="https://alaninsights.blogspot.com/2022/08/blog-post.html">株式会社Ripplenityのインターンもはじめました!</a></p>
       </div>
-    </div>
+    </section>
 
-    <div class="projects">
-      <h3><u>Projects</u></h3>
+    <section class="projects">
+      <h3>Projects</h3>
       <ul>
         <li><a href="https://lin-alan.github.io/omikuji/">O-mikuji (おみくじ)</a></li>
         <li><a href="https://lin-alan.github.io/To-do-list/">To Do List</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="videolink">
-      <h4><u>動画作成</u></h4>
+    <section class="videolink">
+      <h4>動画作成</h4>
       <a href="https://youtu.be/WLcz6N6Wpzs">埼玉大学寮（留学生に向けて）</a>
-    </div>
+    </section>
 
     <button id="aboutme">How much do you know about me?</button>
-  </div>
+  </main>
 
-  <div id="mySidenav" class="sidenav">
+  <nav id="mySidenav" class="sidenav" role="navigation" aria-label="Main Menu">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
     <a href="blog/index.html">Blog</a>
@@ -79,11 +79,8 @@
     <a href="UIUXdesign/UIUXdesign.html">UI UX Design</a>
     <a href="https://lin-alan.github.io/To-do-list/">To Do List</a>
     <a href="https://lin-alan.github.io/omikuji/">OMIKUJI</a>
-  </div>
+  </nav>
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25921.910088107066!2d139.72178605!3d35.69574169999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1687508787921!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-  <script src="myscript.js"></script>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25921.910088107066!2d139.72178605!3d35.69574169999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1687508787921!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Google Map"></iframe>
 </body>
-
 </html>
