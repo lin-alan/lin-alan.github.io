@@ -1,9 +1,17 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
 
 body {
-  background-color: white;
+  background-color: #f4f4f4;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -12,25 +20,19 @@ p {
 
 img {
   vertical-align: middle;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-.image-col {
-  flex-basis: 10%;
-}
-
-img {
   padding: 20px;
   height: 220px;
   width: 200px;
 }
 
-.container1 {
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 20px;
+}
+
+.container1, .projects, .videolink {
   padding-left: 20px;
   padding-right: 70%;
 }
@@ -48,11 +50,6 @@ img {
   overflow-x: hidden;
 }
 
-.projects, .videolink {
-  padding-left: 20px;
-  padding-right: 70%;
-}
-
 .projects ul {
   list-style-type: none;
   padding: 0;
@@ -64,6 +61,7 @@ img {
 
 .social-links a {
   margin: 0 10px;
+  color: inherit;
 }
 
 .menu {
@@ -73,10 +71,14 @@ img {
 .menu-icon {
   font-size: 25px;
   cursor: pointer;
-  padding-left: 20px;
+  padding: 10px 20px;
   border: solid 1px black;
   background-color: lightgray;
-  padding-right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-icon:hover {
+  background-color: #ddd;
 }
 
 .sidenav {
@@ -88,7 +90,7 @@ img {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: width 0.5s ease, background-color 0.5s ease;
   padding-top: 40px;
 }
 
@@ -114,8 +116,17 @@ img {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-height: 450px) {
@@ -125,5 +136,19 @@ img {
 
   .sidenav a {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidenav {
+    width: 200px;
+  }
+
+  #main {
+    margin-left: 200px;
   }
 }
