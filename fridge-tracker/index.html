@@ -9,32 +9,38 @@
 <body>
   <div class="app-shell">
     <header>
-      <h1>Fridge Tracker</h1>
-      <p>Track ingredients, expiry dates, and get recipe ideas.</p>
+      <div class="language-switch" aria-label="Language">
+        <button class="language-button active" type="button" data-language="en">EN</button>
+        <button class="language-button" type="button" data-language="ja">日本語</button>
+      </div>
+      <h1 data-i18n="appTitle">Fridge Tracker</h1>
+      <p data-i18n="appSubtitle">Track ingredients, expiry dates, and get recipe ideas.</p>
     </header>
 
     <section class="card input-card">
-      <h2>Add an ingredient</h2>
+      <h2 data-i18n="addIngredientTitle">Add an ingredient</h2>
       <form id="ingredient-form">
-        <div class="form-row">
-          <label for="name">Ingredient</label>
-          <input id="name" name="name" type="text" placeholder="e.g. Tomato" required />
+        <div class="fields-grid">
+          <div class="form-row">
+            <label for="name" data-i18n="ingredientLabel">Ingredient</label>
+            <input id="name" name="name" type="text" data-i18n-placeholder="ingredientPlaceholder" placeholder="e.g. Tomato" required />
+          </div>
+          <div class="form-row">
+            <label for="quantity" data-i18n="quantityLabel">Quantity</label>
+            <input id="quantity" name="quantity" type="text" data-i18n-placeholder="quantityPlaceholder" placeholder="e.g. 2 pcs, 1 bowl" />
+          </div>
+          <div class="form-row">
+            <label for="expiry" data-i18n="expiryLabel">Expiry date</label>
+            <input id="expiry" name="expiry" type="date" required />
+          </div>
         </div>
-        <div class="form-row">
-          <label for="quantity">Quantity</label>
-          <input id="quantity" name="quantity" type="text" placeholder="e.g. 2 pcs, 1 bowl" />
-        </div>
-        <div class="form-row">
-          <label for="expiry">Expiry date</label>
-          <input id="expiry" name="expiry" type="date" required />
-        </div>
-        <button type="submit">Save ingredient</button>
+        <button type="submit" data-i18n="saveButton">Save ingredient</button>
       </form>
     </section>
 
     <section class="card list-card">
       <div class="section-header">
-        <h2>My fridge</h2>
+        <h2 data-i18n="myFridgeTitle">My fridge</h2>
         <span id="summary"></span>
       </div>
       <div id="ingredient-list" class="ingredient-list"></div>
@@ -42,13 +48,16 @@
 
     <section class="card recipe-card">
       <div class="section-header">
-        <h2>Recipe ideas</h2>
+        <h2 data-i18n="recipeIdeasTitle">Recipe ideas</h2>
         <span id="recipe-summary"></span>
       </div>
       <div id="recipe-list" class="recipe-list"></div>
     </section>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="db/config.js"></script>
+  <script src="db/fridgeDb.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

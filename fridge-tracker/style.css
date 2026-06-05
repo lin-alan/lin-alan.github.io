@@ -30,8 +30,34 @@ body {
 }
 
 header {
+  position: relative;
   margin-bottom: 24px;
   text-align: center;
+}
+
+.language-switch {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.language-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-button.active {
+  background: var(--primary);
+  color: white;
 }
 
 h1 {
@@ -73,10 +99,15 @@ p {
   font-size: 0.95rem;
 }
 
+form,
+.fields-grid {
+  display: grid;
+  gap: 16px;
+}
+
 .form-row {
   display: grid;
   gap: 8px;
-  margin-bottom: 16px;
 }
 
 .form-row label {
@@ -124,6 +155,26 @@ button[type="submit"]:hover {
   border-radius: 18px;
   padding: 16px;
   background: #fcfdff;
+}
+
+.notice {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+  background: #fcfdff;
+}
+
+.notice p {
+  margin: 8px 0 0;
+}
+
+.notice.error {
+  border-color: #fca5a5;
+  background: #fff1f2;
+}
+
+.notice.error strong {
+  color: #b91c1c;
 }
 
 .ingredient-item.expired {
@@ -219,8 +270,8 @@ button[type="submit"]:hover {
 }
 
 @media (min-width: 760px) {
-  .form-row {
-    grid-template-columns: 1fr 1fr;
+  .fields-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   button[type="submit"] {
