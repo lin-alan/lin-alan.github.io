@@ -7,7 +7,7 @@ A simple local fridge tracker.
 - Add ingredients with expiry dates
 - Highlight items that are expiring soon or already expired
 - Show recipe ideas based on current fridge items
-- Save data locally in the browser (Current)
+- Data saved in Supabase
 
 ## Getting started
 
