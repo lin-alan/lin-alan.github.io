@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fridge Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Fridge Tracker</h1>
+      <p>Track ingredients, expiry dates, and get recipe ideas.</p>
+    </header>
+
+    <section class="card input-card">
+      <h2>Add an ingredient</h2>
+      <form id="ingredient-form">
+        <div class="form-row">
+          <label for="name">Ingredient</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Tomato" required />
+        </div>
+        <div class="form-row">
+          <label for="quantity">Quantity</label>
+          <input id="quantity" name="quantity" type="text" placeholder="e.g. 2 pcs, 1 bowl" />
+        </div>
+        <div class="form-row">
+          <label for="expiry">Expiry date</label>
+          <input id="expiry" name="expiry" type="date" required />
+        </div>
+        <button type="submit">Save ingredient</button>
+      </form>
+    </section>
+
+    <section class="card list-card">
+      <div class="section-header">
+        <h2>My fridge</h2>
+        <span id="summary"></span>
+      </div>
+      <div id="ingredient-list" class="ingredient-list"></div>
+    </section>
+
+    <section class="card recipe-card">
+      <div class="section-header">
+        <h2>Recipe ideas</h2>
+        <span id="recipe-summary"></span>
+      </div>
+      <div id="recipe-list" class="recipe-list"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
